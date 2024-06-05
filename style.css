@@ -1,0 +1,57 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+#sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #153385;
+    color: #fff;
+    padding-top: 20px;
+}
+
+#chat-container {
+    margin-left: 250px;
+    padding: 20px;
+}
+#chat-box {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+#input-box {
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+#send-btn {
+    padding: 10px;
+    cursor: pointer;
+}
+#history-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Menjadikan menu dapat digulir jika kontennya terlalu banyak */
+}
+#history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#history-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Garis pembatas antara setiap item */
+}
+
+#history-list li:last-child {
+    border-bottom: none; /* Hilangkan garis pembatas pada item terakhir */
+}
